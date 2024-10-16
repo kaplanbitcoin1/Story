@@ -1,7 +1,7 @@
 ![2](https://github.com/user-attachments/assets/267a428e-8a46-4efa-839c-1a4f85c331fd)
 
 
-# Kaplan Story Node Setup 
+# Kaplan Story Automatic Node Setup 
 * 🐅 A tool for setting up and managing a node on the Story blockchain.
 
 <img width="592" alt="1" src="https://github.com/user-attachments/assets/bc0ffaa7-1c3f-4149-8d47-102c49753212">
