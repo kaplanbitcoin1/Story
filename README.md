@@ -1,7 +1,7 @@
-# Kaplan Node Setup 
+# Kaplan Story Node Setup 
 * 🐅 A tool for setting up and managing a node on the Story blockchain.
 
-<img width="670" alt="1" src="https://github.com/user-attachments/assets/5f682c7d-0815-4cd1-9a7f-4bf7f0403049">
+<img width="592" alt="1" src="https://github.com/user-attachments/assets/bc0ffaa7-1c3f-4149-8d47-102c49753212">
 
 
 ## Table of Contents
