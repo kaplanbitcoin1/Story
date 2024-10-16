@@ -9,7 +9,7 @@
 
 # Table of Contents
  
-[Installation Steps](https://github.com/kaplanbitcoin1/Story/blob/main/story-install.sh)
+[Installation Steps](https://github.com/kaplanbitcoin1/Story/blob/main/story-install.sh)<br>
 [Doc](https://docs.story.foundation/docs/what-is-story)<br>
 [Telegram](https://t.me/tigernode/)<br>
 
