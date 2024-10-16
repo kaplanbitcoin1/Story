@@ -1,1 +1,27 @@
+# Kaplan Node Setup
 
+🐅 **Kaplan Node Setup**: A tool for setting up and managing a node on the Story blockchain.
+
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Installation Steps](#installation-steps)
+- [Usage](#usage)
+- [Links](#links)
+- [Contributors](#contributors)
+
+## Project Overview
+This project aims to facilitate the installation and management of a node on the Story blockchain. Users can perform operations such as node installation, updates, and service status checks through a simple menu interface.
+
+## Installation Steps
+
+Follow the steps below to install Kaplan Node Setup:
+
+1. **Requirements**:
+   - Ubuntu 22.04 or newer.
+   - `curl` and `bash` should be installed.
+
+2. **Download the Installation Script**:
+   ```bash
+   bash <(curl -s https://raw.githubusercontent.com/kaplanbitcoin1/Story/refs/heads/main/story-install.sh?token=GHSAT0AAAAAACRLPQX346B52TPM5XYTPZVAZYQCBVQ)
+   ```
+   
