@@ -25,6 +25,6 @@ Follow the steps below to install Kaplan Node Setup:
 
 2. **Download the Installation Script**:
    ```bash
-   bash <(curl -s https://raw.githubusercontent.com/kaplanbitcoin1/Story/refs/heads/main/story-install.sh?token=GHSAT0AAAAAACRLPQX346B52TPM5XYTPZVAZYQCBVQ)
+   bash <(curl -s https://raw.githubusercontent.com/kaplanbitcoin1/Story/main/story-install.sh)
    ```
    
