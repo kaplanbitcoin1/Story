@@ -27,4 +27,4 @@ Follow the steps below to install Kaplan Node Setup:
    ```bash
    bash <(curl -s https://raw.githubusercontent.com/kaplanbitcoin1/Story/main/story-install.sh)
    ```
-   
+
