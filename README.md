@@ -6,8 +6,6 @@
 
 <img width="592" alt="1" src="https://github.com/user-attachments/assets/bc0ffaa7-1c3f-4149-8d47-102c49753212">
 
-
-# Table of Contents
  
 [Installation Steps](https://github.com/kaplanbitcoin1/Story/blob/main/story-install.sh)<br>
 [Doc](https://docs.story.foundation/docs/what-is-story)<br>
