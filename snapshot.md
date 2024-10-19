@@ -1,7 +1,7 @@
 ![1](https://github.com/user-attachments/assets/3c1305cb-d980-49e6-afaf-6d0e594abe78)
 
-Snapshot Setup Script Explanation
-Update System and Install Required Packages: Updates the package list and installs necessary tools like curl, git, make, build-essential, and python3-pip to ensure your system is ready for the snapshot setup.
+* Snapshot Setup Script Explanation
+* Update System and Install Required Packages: Updates the package list and installs necessary tools like curl, git, make, build-essential, and python3-pip to ensure your system is ready for the snapshot setup.
 
 <img width="646" alt="KaplanStorySnapshot" src="https://github.com/user-attachments/assets/dd223d4b-305f-4a34-8c75-ef64e3497b98">
 
