@@ -10,7 +10,7 @@ bash <(curl -s https://raw.githubusercontent.com/kaplanbitcoin1/Story/main/snaps
 ```
 
 
-# KAPLAN SNAPSHOT Node Setup Menu Explanation
+### KAPLAN SNAPSHOT Node Setup Menu Explanation
 
 # Update System and Install Required Packages:
 
