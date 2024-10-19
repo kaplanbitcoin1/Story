@@ -1,4 +1,5 @@
-![1](https://github.com/user-attachments/assets/8c197bb9-2e19-4bb7-8c82-ab651bf6d66a)
+![1](https://github.com/user-attachments/assets/58683a5b-9481-49e0-bfb5-835c7adfe151)
+
 
 
 # Story Project Metrics: Detailed Descriptions and Significance
