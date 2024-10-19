@@ -66,7 +66,7 @@ In my work with the Story project, I implemented a robust monitoring system usin
   - **Description:** This metric reflects the total amount of swap space available for the system. Swap space is used when the RAM is fully utilized, allowing the system to continue functioning by temporarily writing inactive data to disk.
   - **Significance:** Monitoring swap space is crucial, as insufficient swap can lead to severe performance degradation. Understanding swap usage patterns allowed me to optimize memory allocation effectively.
 
-<img width="1522" alt="3" src="https://github.com/user-attachments/assets/c0240d6d-7c53-4616-8d9f-70ef755cb4bb">
+<img width="1522" alt="3" src="https://github.com/user-attachments/assets/9c09a247-d777-450d-925f-1b730c1edf0b">
 
 
 ### Network Metrics
