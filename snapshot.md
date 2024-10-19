@@ -5,6 +5,8 @@
 
 <img width="645" alt="StorySnapShot" src="https://github.com/user-attachments/assets/facce331-ac4c-46e9-bd92-1665c001ed5b">
 
+[Telegram](https://t.me/tigernode/)<br>
+
 * This step prepares your system for the snapshot installation by installing essential tools and ensuring that all necessary dependencies are up to date.
 
 ```
