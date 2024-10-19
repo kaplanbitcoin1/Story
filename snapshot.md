@@ -1,3 +1,5 @@
+![1](https://github.com/user-attachments/assets/3c1305cb-d980-49e6-afaf-6d0e594abe78)
+
 <img width="646" alt="KaplanStorySnapshot" src="https://github.com/user-attachments/assets/dd223d4b-305f-4a34-8c75-ef64e3497b98">
 
 ```
