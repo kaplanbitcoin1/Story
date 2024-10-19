@@ -30,7 +30,7 @@ In my work with the Story project, I implemented a robust monitoring system usin
   - **Description:** This metric represents the voting power held by each validator in the network, which is determined by the amount of stake they hold. 
   - **Significance:** Validator power is a critical factor in block proposals and confirmations. Monitoring this metric ensures that no single validator can unduly influence the network, maintaining its democratic and decentralized nature.
 
-<img width="1512" alt="2" src="https://github.com/user-attachments/assets/b4310195-aaa2-4b10-b6da-61c4ffd6d262">
+<img width="1512" alt="2" src="https://github.com/user-attachments/assets/75d32666-7377-4015-8c92-537228afa7a2">
 
 
 ## 2. System Metrics
