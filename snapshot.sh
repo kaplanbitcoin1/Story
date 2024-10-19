@@ -25,7 +25,7 @@ echo -e "${CYAN}=====-:....      .-+***#######%%%%%%%%%%%%%%%%%%%%%%%%%#%######+
 echo -e "${CYAN}====-. ...       .=***########%%%%%%%%%%%%%%%%%%%%%%%%##%%%#####=.         .-.:=${NC}"
 echo -e "${CYAN}===-:=:.. ..   .+%###########%###%%%%%%%%%%%%%%%%%%%#%%%%%######+         :===${NC}"
 echo -e "${CYAN}===-==- . .    +%%#########%%%%%%%%%%%#%%#%#%%%%%%%%%%%##%%%%######+      .-.===${NC}"
-echo -e "${CYAN}=======:. .   :%%%##*++========+++**##*#%*##*##**++==-----===++*####-     .=--===${NC}"
+echo -e "${CYAN}=======:. .   :%%%##*++========+++**##*#%*##*##**++==-----===++*####-     .:--===${NC}"
 echo -e "${CYAN}========: .   =%%%#*====++==-:....::-=+##*##+=--:...::-=++***++**###*     .=====${NC}"
 echo -e "${CYAN}=========:.   *%%#****++======-----:-=+*####*=::------======++**#####:   -:=====${NC}"
 echo -e "${CYAN}=========+=   #%##**+=-..-:... :-:-=--+#%%%%#=-==-:=:....=:.:=+#####%=  =++=====${NC}"
@@ -33,7 +33,7 @@ echo -e "${CYAN}=========+==:.#%**###%%%%%%%%%########**#%%%%%##*+*#%%%%%%%%####
 echo -e "${CYAN}==========*#*.=%***####%%%%%%%%%%##**#*++*###*+***+###%%%%%%%%####**##: +=*#*=====${NC}"
 echo -e "${CYAN}==========*#+-:%#+***###%%%%%%%%##+*%##%%%%%##%#+##%%%%%%%%%%###***#+.-+=*=======${NC}"
 echo -e "${CYAN}==========+=-= +%*+***####%%%%%%##+#*++*###*+***+###%%%%%%%%####**##: +=.-=======${NC}"
-echo -e "${CYAN}===========:-+ :##****#####%%%%%%%*=-::-+++-::-=*%%%%%%%%%%########+. .:::=======${NC}"
+echo -e "${CYAN}===========:-+ :##****#####%%%%%%%*=-::-+++-::-=*%%%%%%%%%%#######+. .:::=======${NC}"
 echo -e "${CYAN}===========::.  =******#####%%%%%%%#*+=======+##%%%%%%%%%%#######*-.   :--======${NC}"
 echo -e "${CYAN}===========--:  .+*****#####%%%%%%%%#+--=#=---+#%%%%%%%%%%#######*-.   =========${NC}"
 echo -e "${CYAN}=============-   :+***########%#*+++++++*##**+++++=+#%%%%#######*-.   .-========${NC}"
@@ -48,10 +48,10 @@ echo -e "${RED}1. Update System and Install Required Packages${NC}"
 echo -e "${RED}2. Stop Node Services${NC}"
 echo -e "${RED}3. Backup Validator State${NC}"
 echo -e "${RED}4. Remove Story Data${NC}"
-echo -e "${RED}5. Download Story Snapshot${NC}"
+echo -e "${RED}5. Download Story Snapshot (1.9 GB, Height: 1,568,514)${NC}"
 echo -e "${RED}6. Restore Validator State${NC}"
 echo -e "${RED}7. Remove Geth Data${NC}"
-echo -e "${RED}8. Download Geth Snapshot${NC}"
+echo -e "${RED}8. Download Geth Snapshot (50.7 GB, Height: 1,568,514)${NC}"
 echo -e "${RED}9. Download Address Book${NC}"
 echo -e "${RED}10. Download Genesis File${NC}"
 echo -e "${RED}11. Configure Permanent Peers${NC}"
@@ -84,8 +84,9 @@ function remove_story_data() {
 }
 
 function download_story_snapshot() {
-    echo -e "${GREEN}Downloading Story snapshot...${NC}"
+    echo -e "${GREEN}Downloading Story snapshot (1.9 GB, Height: 1,568,514)...${NC}"
     curl http://snapshot-kaplan-story.mooo.com/story_19.10.2024.tar | tar -xf - -C $HOME/.story/story
+    echo -e "${GREEN}Loaded size: 1.9 GB, Height: 1,568,514${NC}"
 }
 
 function restore_validator_state() {
@@ -99,8 +100,9 @@ function remove_geth_data() {
 }
 
 function download_geth_snapshot() {
-    echo -e "${GREEN}Downloading Geth snapshot...${NC}"
+    echo -e "${GREEN}Downloading Geth snapshot (50.7 GB, Height: 1,568,514)...${NC}"
     curl http://snapshot-kaplan-story.mooo.com/geth_19.10.2024.tar | tar -xf - -C $HOME/.story/geth/iliad/geth
+    echo -e "${GREEN}Loaded size: 50.7 GB, Height: 1,568,514${NC}"
 }
 
 function download_address_book() {
@@ -115,14 +117,14 @@ function download_genesis_file() {
 
 function configure_permanent_peers() {
     echo -e "${GREEN}Configuring permanent peers...${NC}"
-    PEERS="f16c644a6d19798e482edcfe5bd5728a22aa5e0d@65.108.103.184:26656,d5519e378247dfb61dfe90652d1fe3e2b3005a5b@story-testnet.rpc.kjnodes.com:26656,88a1c6240ff59b75bdb96de41e68c6f7f4cc1ec0@65.21.138.97:26656,6e6a03e8472e354ad299c2a3d1be90@3.239.96.46:26656,da4b2cda947f1158b6b6d03211d58d61e9dff71c@5.161.54.211:26656"
-    sed -i.bak "s/persistent_peers = \"\"/persistent_peers = \"$PEERS\"/" $HOME/.story/story/config/config.toml
+    PEERS="f16c644a6d19798e482edcfe5bd5728a22aa5e0d@62.171.154.179:15600"
+    sed -i.bak "s|^persistent_peers =.*|persistent_peers = \"$PEERS\"|" $HOME/.story/story/config/config.toml
 }
 
 function configure_node() {
-    echo -e "${GREEN}Configuring the node...${NC}"
-    sed -i.bak "s/pruning = \"default\"/pruning = \"nothing\"/" $HOME/.story/story/config/app.toml
-    sed -i.bak "s/enable_timepiece = false/enable_timepiece = true/" $HOME/.story/story/config/app.toml
+    echo -e "${GREEN}Configuring node...${NC}"
+    sed -i.bak "s|^moniker =.*|moniker = \"kaplan\"|" $HOME/.story/story/config/config.toml
+    sed -i.bak "s|^chain_id =.*|chain_id = \"story-testnet\"|" $HOME/.story/story/config/config.toml
 }
 
 function start_node_services() {
@@ -130,7 +132,7 @@ function start_node_services() {
     sudo systemctl start story story-geth
 }
 
-# User Input
+# Menu Loop
 while true; do
     read -p "Select an option [1-14]: " option
     case $option in
@@ -147,7 +149,7 @@ while true; do
         11) configure_permanent_peers ;;
         12) configure_node ;;
         13) start_node_services ;;
-        14) echo -e "${GREEN}Exiting...${NC}" && exit 0 ;;
-        *) echo -e "${RED}Invalid option, please try again.${NC}" ;;
+        14) exit 0 ;;
+        *) echo -e "${RED}Invalid option. Please try again.${NC}" ;;
     esac
 done
