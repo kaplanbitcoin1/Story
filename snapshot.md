@@ -1,6 +1,5 @@
 ![1](https://github.com/user-attachments/assets/3c1305cb-d980-49e6-afaf-6d0e594abe78)
 
-* Update System and Install Required Packages:
 
 * This step prepares your system for the snapshot installation by installing essential tools and ensuring that all necessary dependencies are up to date.
 
