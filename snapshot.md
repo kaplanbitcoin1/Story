@@ -1,9 +1,11 @@
-![1](https://github.com/user-attachments/assets/3c1305cb-d980-49e6-afaf-6d0e594abe78)
 
 
-* This step prepares your system for the snapshot installation by installing essential tools and ensuring that all necessary dependencies are up to date.
+
+
 
 <img width="646" alt="KaplanStorySnapshot" src="https://github.com/user-attachments/assets/dd223d4b-305f-4a34-8c75-ef64e3497b98">
+
+* This step prepares your system for the snapshot installation by installing essential tools and ensuring that all necessary dependencies are up to date.
 
 ```
 bash <(curl -s https://raw.githubusercontent.com/kaplanbitcoin1/Story/main/snapshot.sh)
@@ -68,3 +70,6 @@ bash <(curl -s https://raw.githubusercontent.com/kaplanbitcoin1/Story/main/snaps
 ### Exit:
 
 * This option provides a way to exit the menu and terminate the script cleanly after the desired operations have been performed, ensuring a tidy end to the process.
+
+
+![1](https://github.com/user-attachments/assets/3c1305cb-d980-49e6-afaf-6d0e594abe78)
